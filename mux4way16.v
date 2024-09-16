@@ -5,7 +5,7 @@
  *       c if sel == 10
  *       d if sel == 11
  */
-
+// 十六位四路多路选择器
 module Mux4Way16(input[15:0] a,b,c,d, input[1:0] sel, output[15:0] out);
   wire [15:0] outab, outcd;
   Mux16 g1(a, b, sel[0], outab);

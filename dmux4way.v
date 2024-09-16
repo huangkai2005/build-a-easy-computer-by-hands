@@ -5,7 +5,7 @@
  *                {0, 0, in, 0} if sel == 10
  *                {0, 0, 0, in} if sel == 11
  */
-
+// 四路多路复用器
 module DMux4Way(input in, input[1:0] sel, output a,b,c,d);
   Not  g1(sel[1], nsel1);
   Not  g2(sel[0], nsel0);

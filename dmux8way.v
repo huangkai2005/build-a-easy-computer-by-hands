@@ -5,7 +5,7 @@
  *                            etc.
  *                            {0, 0, 0, 0, 0, 0, 0, in} if sel == 111
  */
-
+// 八路多路复用器
 module DMux8Way(input in, input[2:0] sel, output a,b,c,d,e,f,g,h);
   Not g1(sel[2], nsel2);
   And g2(in, sel[2], s2h);

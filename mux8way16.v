@@ -5,7 +5,7 @@
  *       etc.
  *       h if sel == 111
  */
-
+// 十六位八路多路选择器
 module Mux8Way16(input[15:0] a,b,c,d,e,f,g,h, input[2:0] sel, output[15:0] out);
   wire [15:0] outad, outeh;
   Mux4Way16 g1(a, b, c, d, sel[1:0], outad);

@@ -3,7 +3,7 @@
  * If clk[t] == 1 then out[t+1] = in[t]
  * else out does not change
  */
-
+// 寄存器
 module Register(input[15:0] in, input clock, load, output[15:0] out);
   DFF g01(in[15], clock, load, out[15]);
   DFF g02(in[14], clock, load, out[14]);

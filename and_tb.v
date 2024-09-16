@@ -1,6 +1,6 @@
 `include "nand.v"
 `include "and.v"
-
+`include "not.v"
 module and_tb;
     reg a, b;
     wire out;

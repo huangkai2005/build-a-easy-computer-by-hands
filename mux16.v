@@ -3,7 +3,7 @@
  * for i = 0..15 out[i] = a[i] if sel == 0 
  *                        b[i] if sel == 1
  */
-
+// 16位多路选择器
 module Mux16(input[15:0] a, b, input sel, output[15:0] out);
   Mux g15(a[15], b[15], sel, out[15]);
   Mux g14(a[14], b[14], sel, out[14]);
